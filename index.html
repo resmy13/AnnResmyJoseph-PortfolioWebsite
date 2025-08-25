@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Video Backgrounds -->
+  <div class="video-background">
+    <video autoplay muted loop class="video active" id="video1">
+      <source src="./mixkit-observatory-under-a-starry-sky-4363-hd-ready.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop class="video" id="video2">
+      <source src="./mixkit-observatory-under-a-starry-sky-4363-hd-ready.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <header>
+    <h1 class="fade-in">Hi! I'm Ann Resmy Joseph</h1>
+    <p class="fade-in">| Electronics and Communication Engineer | Full Stack Developer | Designer | Content Creator |</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section fade-in-up">
+      <h2>About Me</h2>
+      <p>I’m a passionate and goal-driven Electronics and Communications Engineer with a strong foundation in both hardware and software systems. As a certified MERN Stack Developer, I bring a unique blend of analytical problem-solving and full-stack web development expertise that bridges the gap between embedded systems and scalable web applications.
+
+With hands-on experience in MongoDB, Express.js, React.js, and Node.js, I build modern, efficient, and user-focused solutions. I thrive in dynamic environments and love turning complex problems into intuitive, responsive user experiences. Beyond technical skills, I value collaboration, curiosity, and continuous growth—I firmly believe every expert was once a beginner and take pride in mentoring and learning alongside peers.</p>
+    </section>
+
+    <section id="experience" class="section fade-in-up">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Founder & Instructor</strong> at Engineer & Educator YouTube Channel(2024-present)</li>
+        <li><strong>Program Associate & Subject Matter Expert(MERN stack)</strong> at Techmaghi (March 2024 – Oct 2024)</li>
+        <li><strong>Full Stack Engineer</strong> at ICT Academy of Kerala</li>
+        <li><strong>Skill Development Consultant Faculty</strong> at GICE</li>
+        <li><strong>Data Analytics Student Intern</strong> at IPSR</li>
+        <li><strong>Embedded Systems Intern</strong> at United NDT Training and Inspection center</li>
+        <li><strong>Telecommunications Student Intern</strong> at BSNL</li>
+    </ul>
+    </section>
+
+    <section id="portfolio" class="section fade-in-up">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="card"><a href="https://carloacutistech.netlify.app/"> View Project1</a></div>
+        <div class="card"><a href="https://engineerandeducator-one.vercel.app/"> View Project 2 </a></div>
+       <div class="card"><a href="https://resmy13.github.io/Appleclonesimple/">View Project 3</a></div>
+       <div class="card"><a href="https://skilltrackerapp.netlify.app/">View Project 4</a></div>
+
+        <div class="card"><a href="https://resmy13.github.io/keralatourism/">View Project 5</a></div>
+        <div class="card"><a href="https://resmy13.github.io/ICTassignment2FormValidation/">View Project 6</a></div>
+        
+        
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in-up">
+      <h2>Contact</h2>
+     <p>annresmy@gmail.com</p>
+     <p>annresmyjoseph@gmail.com</p>
+     <h3>Follow me</h3>
+    <a href="https://www.linkedin.com/in/ann-resmy-joseph-261208203"> <img src="./download.png"> </a> 
+    <a href="https://www.youtube.com/@AnnResmyJoseph007"> <img src="./download (6).png"> </a>
+
+    </section>
+
+
+    
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ann Resmy Joseph. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Rotate video backgrounds every 20 seconds
+    const videos = document.querySelectorAll('.video');
+    let index = 0;
+
+    setInterval(() => {
+      videos[index].classList.remove('active');
+      index = (index + 1) % videos.length;
+      videos[index].classList.add('active');
+    }, 20000);
+  </script>
+</body>
+</html>
