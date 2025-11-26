@@ -135,6 +135,16 @@ With hands-on experience in MongoDB, Express.js, React.js, and Node.js, I build 
       index = (index + 1) % videos.length;
       videos[index].classList.add('active');
     }, 20000);
+
+
+
+    
+  document.querySelectorAll(".iframe-container iframe").forEach((frame) => {
+    frame.addEventListener("load", () => {
+      frame.classList.add("loaded");
+    });
+  });
+
   </script>
 </body>
 </html>
